@@ -1,0 +1,12 @@
+config:
+  target: "http://localhost:3000/api"
+  phases:
+    - duration: 10
+      arrivalRate: 20
+scenarios:
+  - flow:
+      - post:
+          url: "/users"
+          json:
+            name: "Thiago"
+            cpf: "teste@teste.com.br"
